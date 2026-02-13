@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda página responsive</title>
+</head>
+<body>
+  <style>
+   body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+ 
+           header, nav, main, footer{
+            padding: 15px;
+        }
+
+  header{
+            background-color: #b02bb0;
+            color: white;
+        }
+
+        nav{
+            background-color: #e2e8f0;
+        }
+
+ footer{
+            background-color: #b02ba9;
+            color: white;
+            text-align: center;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .caja{
+            background-color: #f7fafc;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        @media(max-width){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            h1{
+                font-size: 700px;
+            }
+            p{
+                font-size: 700px;
+            }
+        }
+ 
+         .img-pequena {
+         width: 150px;   /* cambia el tamaño aquí */
+        height: auto;
+}
+
+
+        nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #1a202c;
+        } 
+
+  </style> 
+
+
+
+
+   <header>
+        <h1>Mi web responsive_Emely Pineda</h1>
+        <p>Ejemplo simple para entender el responsive</p>
+    </header>
+
+ 
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">servicios</a>
+        <a href="#">contacto</a>
+    </nav>
+
+<main>
+        <div class="grid">
+            <article class="caja">
+            <img src="eu hello Kitty né amores.jpg" alt="Imagen" class="mi-imagen"> 
+            width: 300px;
+            <h2>Artículo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ipsa cumque inventore officia rerum libero, sint reiciendis voluptate recusandae consectetur eveniet tempora doloribus obcaecati soluta quas! Fugit beatae facilis sit?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsam mollitia, excepturi aspernatur officiis eum perferendis, dolores quaerat consequuntur corrupti, culpa omnis totam optio eius consectetur porro dolorem natus ab!</p>
+            </article>
+
+            <article class="caja">
+             <img src="download.jpg" alt="Imagen" class="mi-imagen">   
+            <h2>Artículo 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ipsa cumque inventore officia rerum libero, sint reiciendis voluptate recusandae consectetur eveniet tempora doloribus obcaecati soluta quas! Fugit beatae facilis sit?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsam mollitia, excepturi aspernatur officiis eum perferendis, dolores quaerat consequuntur corrupti, culpa omnis totam optio eius consectetur porro dolorem natus ab!</p>
+            </article>
+  
+              <article class="caja">
+             <img src=" " alt="Imagen" class="mi-imagen">   
+            <h2>Artículo 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ipsa cumque inventore officia rerum libero, sint reiciendis voluptate recusandae consectetur eveniet tempora doloribus obcaecati soluta quas! Fugit beatae facilis sit?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsam mollitia, excepturi aspernatur officiis eum perferendis, dolores quaerat consequuntur corrupti, culpa omnis totam optio eius consectetur porro dolorem natus ab!</p>
+            </article>
+  
+        </div>
+    </main>
+
+    <footer>
+        <p>2026-Ehjemplo sencillo</p>
+    </footer>
